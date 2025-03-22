@@ -1,0 +1,17 @@
+# Archivos y carpetas de Visual Studio Code
+.vscode/
+.history/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de registro
+*.log
+
+# Archivos temporales de compilación
+*.tmp
+*.temp
+
+# Archivos de configuración de entorno
+.env
