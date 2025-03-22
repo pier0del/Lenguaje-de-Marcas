@@ -1,0 +1,48 @@
+:root {
+    --primario: gray;
+    --primarioOscuro: #5f8e0e;
+    --secundario: #1E3A8A;
+    --terciario:  #F2C94C;
+    --blanco: #fff;
+    --negro: #000;
+    --fuentePrincipal: 'Poppins';
+    --fuenteSecundaria: 'Merriweather';
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.main__priceTable {
+    width: 100%;
+}
+
+.main__priceTable th, .main__priceTable td {
+    border: 1px solid #fff;
+}
+
+.main__priceTable th {
+    background-color: #009688;
+    color: #fff;
+}
+
+.footer__copyright {
+    text-align: center;
+}

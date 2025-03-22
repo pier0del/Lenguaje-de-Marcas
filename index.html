@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Planes de Suscripcioon</title>
-</head>
-<body>
-
-<table border="1" cellpadding="10">
-    <thead>
-        <tr>
-            <th>Plan</th>
-            <th>Precio Mensual</th>
-            <th>Características</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Basico</td>
-            <td>$9.99</td>
-            <td>
-                <ul>
-                    <li>1 proyecto</li>
-                    <li>10 GB almacenamiento</li>
-                    <li>Soporte basico</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>Estandar</td>
-            <td>$19.99</td>
-            <td>
-                <ul>
-                    <li>5 proyectos</li>
-                    <li>50 GB almacenamiento</li>
-                    <li>Soporte prioritario</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>$29.99</td>
-            <td>
-                <ul>
-                    <li>Proyectos ilimitados</li>
-                    <li>Almacenamiento ilimitado</li>
-                    <li>Soporte 24h</li>
-                </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planes de Suscripción</title>
+        <!-- Este fichero normalize.css lo veremos en clase -->
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+        <!-- ¡Usa las fuentes de Google! -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Nuestros estilos -->
+        <link rel="stylesheet" type="text/css" href="assets/css/priceTable.css">
+    </head>
+    <body>
+        <!-- Acostúmbrate a poner las secciones semánticas más comunes.
+            Así practicarás :)
+        -->
+        <header>
+            <h1>Tablas</h1>
+            <!-- Aquí vendría bien un índice con enlaces a distintas secciones de esta página -->
+        </header>
+        <!-- Los atributos border y cellpadding están obsoletos -->
+        <!-- Tienes que usar css para conseguir que aparezcan los bordes en las celdas.
+            Lo vimos ayer viernes 21 de marzo
+        -->
+        <main>
+            <h2>Tabla de precios</h2>
+            <table class="main__priceTable">
+                <thead>
+                    <tr>
+                        <th>Choose a plan</th>
+                        <th>
+                            <p><strong>Basic</strong></p>
+                            <p><span class="main__priceTable__price">€25/<span class="main__priceTable__periodicity">month</span></p>
+                        </th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Identa cada nivel con respecto al superior -->
+                    <tr>
+                        <td>Basico</td>
+                        <td>$9.99</td>
+                        <td>
+                            <ul>
+                                <li>1 proyecto</li>
+                                <li>10 GB almacenamiento</li>
+                                <li>Soporte basico</li>
+                            </ul>
+                        </td>
+                    </tr>
+                <tr>
+                    <td>Estandar</td>
+                    <td>$19.99</td>
+                    <td>
+                        <ul>
+                            <li>5 proyectos</li>
+                            <li>50 GB almacenamiento</li>
+                            <li>Soporte prioritario</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>$29.99</td>
+                    <td>
+                        <ul>
+                            <li>Proyectos ilimitados</li>
+                            <li>Almacenamiento ilimitado</li>
+                            <li>Soporte 24h</li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <!-- Usa BEM (https://getbem.com/) como convención para los nombres de los estilos -->
+            <p class="footer__copyright">&#169; Piero - 2025</p>
+        </footer>
+    </body>
 </html>
